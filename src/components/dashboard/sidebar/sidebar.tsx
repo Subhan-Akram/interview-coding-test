@@ -17,7 +17,7 @@ export default function D_Sidebar() {
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton>Logo</SidebarMenuButton>
+            <SidebarMenuButton className="text-white text-xl">Logo</SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>

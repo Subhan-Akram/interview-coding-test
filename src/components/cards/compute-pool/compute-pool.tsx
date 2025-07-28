@@ -46,7 +46,6 @@ export default function Compute_Pool() {
 
   return (
     computePoolData.length > 0 &&
-    !isGetting &&
     computePoolData.map(
       (
         {
