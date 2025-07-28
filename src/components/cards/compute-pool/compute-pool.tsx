@@ -57,7 +57,6 @@ export default function Compute_Pool() {
           createdAt,
           availableCapacity,
           totalCapacity,
-          allocatedCapacity,
           allocations,
           tags,
         },
@@ -72,9 +71,8 @@ export default function Compute_Pool() {
                 </Badge>
                 <Badge
                   variant="secondary"
-                  className={`${
-                    active ? "bg-[#032E15] text-green-500" : "bg-red-900 text-red-300"
-                  }`}
+                  className={`${active ? "bg-[#032E15] text-green-500" : "bg-red-900 text-red-300"
+                    }`}
                 >
                   <svg
                     width="8"
@@ -145,11 +143,10 @@ export default function Compute_Pool() {
                 </div>
                 <Progress
                   value={percent(availableCapacity.cpuCount, totalCapacity.cpuCount)}
-                  className={`my-3 ${
-                    percent(availableCapacity.cpuCount, totalCapacity.cpuCount) <= 50
+                  className={`my-3 ${percent(availableCapacity.cpuCount, totalCapacity.cpuCount) <= 50
                       ? "!bg-red-500"
                       : "!bg-green-600"
-                  }`}
+                    }`}
                 />
                 <p>{percent(availableCapacity.cpuCount, totalCapacity.cpuCount)}%</p>
               </div>
@@ -160,11 +157,10 @@ export default function Compute_Pool() {
                 </div>
                 <Progress
                   value={percent(availableCapacity.cpuCount, totalCapacity.cpuCount)}
-                  className={`my-3 ${
-                    percent(availableCapacity.cpuCount, totalCapacity.cpuCount) <= 50
+                  className={`my-3 ${percent(availableCapacity.cpuCount, totalCapacity.cpuCount) <= 50
                       ? "!bg-red-500"
                       : "!bg-green-600"
-                  }`}
+                    }`}
                 />
                 <p>{percent(availableCapacity.memoryGb, totalCapacity.memoryGb)}%</p>
               </div>
@@ -175,11 +171,10 @@ export default function Compute_Pool() {
                 </div>
                 <Progress
                   value={percent(availableCapacity.cpuCount, totalCapacity.cpuCount)}
-                  className={`my-3 ${
-                    percent(availableCapacity.cpuCount, totalCapacity.cpuCount) <= 50
+                  className={`my-3 ${percent(availableCapacity.cpuCount, totalCapacity.cpuCount) <= 50
                       ? "!bg-red-500"
                       : "!bg-green-600"
-                  }`}
+                    }`}
                 />
                 <p>{percent(availableCapacity.gpuCount, totalCapacity.gpuCount)}%</p>
               </div>
@@ -190,11 +185,10 @@ export default function Compute_Pool() {
                 </div>
                 <Progress
                   value={percent(availableCapacity.cpuCount, totalCapacity.cpuCount)}
-                  className={`my-3 ${
-                    percent(availableCapacity.cpuCount, totalCapacity.cpuCount) <= 50
+                  className={`my-3 ${percent(availableCapacity.cpuCount, totalCapacity.cpuCount) <= 50
                       ? "!bg-red-500"
                       : "!bg-green-600"
-                  }`}
+                    }`}
                 />
                 <p>{allocations.length > 0 ? "Active" : "Idle"}</p>
               </div>
